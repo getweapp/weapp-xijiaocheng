@@ -1,0 +1,27 @@
+<view>
+    <scroll-view scroll-y="true" class="layout"> 
+   
+
+        <!-- list start -->
+        <view class="lists-box">
+            <view wx:for="{{list}}" wx:key="" class="item-box" >
+                <view class="item-img">
+                    <image src="{{item.avatar}}" mode="center"></image>
+                </view>
+                <text class="item-title">{{item.title}}</text>
+               
+                <view class="item-btm">
+                    <view class="item-buy-people" bindtap="buy" data-id="{{item.productId}}">
+                        立即购买
+                    </view>
+                    <view class="item-price">¥{{item.price}}</view>
+                </view>
+            </view>
+        </view>
+        <!-- / list end -->
+
+     
+
+        
+    </scroll-view>
+</view>

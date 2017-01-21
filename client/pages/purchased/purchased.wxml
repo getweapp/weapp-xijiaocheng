@@ -1,0 +1,27 @@
+<view>
+    <scroll-view scroll-y="true" bindscrolltoupper="refresh" bindscrolltolower="update" class="layout">
+        <view class="tips" wx:if="{{orders.length==0}}">
+            <image src="../../images/tips.png"></image> <text>{{ tips }}</text>
+            <view wx:if="{{ tips == '你还没有登录' }}" class="login-btn" bindtap="loginFun">立即登录</view>
+        </view>
+        <!-- list start -->
+        <view wx:for="{{orders}}" wx:key="" class="hot-item-box" >
+            <view class="hot-item-top">
+             
+
+                <view class="hot-item-top-right">
+                    <text class="hot-item-title">{{item.title}}</text>
+                    <view class="hot-item-price">¥{{item.amount}}</view>
+                    <view class="hot-item-No-time-box">消费时间：{{item.created}}</view>
+                </view>
+            </view>
+            
+           
+        </view>
+        <!-- / list end -->
+
+        <!-- prompt message start -->
+        <text class="{{(total != 0 && total < page*10) ? 'promptShow' : 'promptHide'}}">没有更多课程了</text>
+        <!-- / prompt message end -->
+    </scroll-view>
+</view>

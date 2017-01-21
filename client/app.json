@@ -1,0 +1,37 @@
+{
+  "pages": [
+      "pages/courses/courses",
+      "pages/purchased/purchased"
+  ],
+  "window": {
+    "navigationBarTextStyle": "#ffffff",
+    "navigationBarTitleText": "金盆洗脚城",
+    "navigationBarBackgroundColor": "#fb5d5d",
+    "backgroundColor": "#fb5d5d"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#fb5d5d",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/courses/courses",
+      "iconPath": "images/serv1.png",
+      "selectedIconPath": "images/serv0.png",
+      "text": "服务"
+    },{
+      "pagePath": "pages/purchased/purchased",
+      "iconPath": "images/purchased.png",
+      "selectedIconPath": "images/purchased_active.png",
+      "text": "已购"
+
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}

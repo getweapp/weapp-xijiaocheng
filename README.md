@@ -30,3 +30,4 @@ https://www.getweapp.com/project?projectId=5883a2f152e1e8733dc567e0
 
 ### 作者的设计思路和源码分析视频课程：
 
+https://www.getweapp.com/videoCourse?courseId=588420e745b89c334dd2754c
